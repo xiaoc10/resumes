@@ -7,7 +7,7 @@ SOURCEFILE = shichao_an.tex
 
 all: $(CURRENT).pdf $(PROPOSED).pdf
 
-$(CURRENT).pf: current/$(SOURCEFILE)
+$(CURRENT).pdf: current/$(SOURCEFILE)
 	pdflatex -jobname=$(CURRENT) current/$(SOURCEFILE)
 
 $(PROPOSED).pdf: proposed/$(SOURCEFILE)
