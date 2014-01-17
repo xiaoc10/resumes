@@ -1,0 +1,195 @@
+% resume.tex
+% vim:set ft=tex spell:
+
+\documentclass[13pt,letterpaper]{article}
+\usepackage[letterpaper,top=0.6in,left=0.9in,right=0.9in,bottom=0.6in]{geometry}
+\usepackage{tabularx}
+%\usepackage[scaled=0.92]{helvet}
+
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+%\usepackage[T1]{fontenc}
+\usepackage[LGR,OT1]{fontenc}
+
+% Font control
+\usepackage{epigrafica}
+% Open Sans
+%\usepackage[default,osfigures,scale=0.95]{opensans} 
+
+\usepackage{textcomp}
+
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{hyperref}
+
+% For multi-line commen
+\usepackage{verbatim}
+%\usepackage{tgpagella}
+\pagestyle{empty}
+\definecolor{dgray}{RGB}{80,80,80}
+\setlength{\tabcolsep}{0em}
+
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+    {\setlength{\leftmargin}{#1}}%
+    \item[]%
+}
+{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+    {\setlength{\leftmargin}{-0.5#1}}%
+    \item[]%
+}
+{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+    #1 &
+    #2 \\
+\end{tabular*}}
+
+% make "C++" look pretty when used in text by touching up the plus signs
+\newcommand{\CPP}
+{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\small\bf ++}}
+
+% and the actual content starts here
+\begin{document}
+
+\begin{center}
+{\huge \normalfont \textbf{Shichao An}}
+\small \\\vspace{0.4em} \color{dgray}
+30 Newport Parkway\ \ \textbullet
+\ \ Apt 3214\ \ \textbullet
+\ \ Jersey City, NJ 07310
+\\
+(631) 464-2914\ \ \textbullet
+\ \ \href{mailto:shichao.an@nyu.edu}{shichao.an@nyu.edu}\\
+\ \ \href{http://www.shichao-an.info/}{\color{NavyBlue} www.shichao-an.info}
+\end{center}
+
+%\hrule
+\vspace{-1.0em}
+\subsection*{\color{NavyBlue} EDUCATION}
+
+\begin{itemize}
+    \parskip=0.1em
+
+    \item
+    \headerrow
+        {\textbf{New York University}}
+        {\emph{\color{dgray} \small 09/2012 -- 05/2014 \color{dgray}(exp.)}}
+    \headerrow
+        {\color{dgray}  \small Courant Institute of Mathematical Sciences\\ 
+         \small M.S. Candidate in Computer Science}
+         
+    \begin{itemize*} \small
+         \item[-]\leftskip-1em \rightskip2.8cm \small \textbf{Relevant Courses}: Programming Languages, Fundamental Algorithms, Operating Systems, Database Systems, Cloud Computing, Open Source Tools, Multicore Processors
+         \item[-]\leftskip-1em \rightskip2.8cm \small \textbf{Current GPA}: 3.81/4.00
+         
+         \end{itemize*}
+         
+    \item
+    \headerrow
+        {\textbf{University of Science and Technology Beijing} \color{dgray} \small (Beijing, China)} 
+        {\emph{\color{dgray} \small 09/2008 -- 06/2012}}
+    \headerrow
+        {\color{dgray} \small School of Computer and Communication Engineering\\ 
+         \small B.S. in Computer Science}
+
+
+\end{itemize}
+
+%\hrule
+\vspace{-1.4em}
+\subsection*{\color{NavyBlue} PROJECTS}
+
+\begin{itemize}
+    \parskip=0.1em
+    
+    \item
+    \headerrow
+        {\textbf{\href{http://geoport.co/}{\color{NavyBlue}GeoPort}}}
+        {\emph{\color{dgray} \small 11/2013 -- present}}
+        
+    \begin{itemize*} \small
+        \item[-]\leftskip-1em \rightskip2.8cm Built a geo-social platform that facilitates event-based real-time location sharing
+        \item[-]\leftskip-1em \rightskip2.8cm Utilized APIs of Google Maps and Google Geocoding and implemented the website with Django, MongoDB and Bootstrap
+        
+    \end{itemize*}
+    
+    \item
+    \headerrow
+        {\textbf{\href{https://github.com/shichao-an/soundmeter}{\color{NavyBlue}SoundMeter}}}
+        {\emph{\color{dgray} \small 12/2013 -- 01/2014}}   
+        
+    \begin{itemize*} \small
+        \item[-]\leftskip-1em \rightskip2.8cm Implemented a command-line tool to obtain sound power in real time, which basically turns the audio recording functionality into a sound meter for machines that ship with audio input devices
+    \end{itemize*}
+
+
+    \item
+    \headerrow
+        {\textbf{\href{https://github.com/shichao-an/wikilookup}{\color{NavyBlue}WikiLookup}}}
+        {\emph{\color{dgray} \small 01/2014 -- present}}
+
+    \begin{itemize*} \small 
+        \item[-]\leftskip-1em \rightskip2.8cm Created a command-line front-end able to perform fast lookups against Wikipedia and arbitrary MediaWiki sites
+    \end{itemize*}
+
+
+\end{itemize}
+
+%\hrule
+\vspace{-1.4em}
+\subsection*{\color{NavyBlue} EXPERIENCE}
+
+\begin{itemize}
+    \parskip=0.1em
+
+    \item
+    \headerrow
+        {\textbf{\href{http://signl.com/}{\color{NavyBlue}SIGNL}}   \color{dgray} \small (New York)}
+        {\emph{\color{dgray} \small 06/2013 -- 08/2013}}
+
+    \headerrow
+        { \small Software Development Intern }
+
+    \begin{itemize*} \small
+        \item[-]\leftskip-1em \rightskip2.8cm Developed site backends, reusable applications and front-end features, including authentication, content management, activity stream, news processing, security and SEO
+        \item[-]\leftskip-1em \rightskip2.8cm Used Django, MySQL, MongoDB, Redis, Celery and Node.js for the backend implementation of major site functionalities and real-time data aggregation
+            \end{itemize*}
+
+    \item
+    \headerrow
+        {\textbf{\href{http://www.ibeike.com/}{\color{NavyBlue}iBeiKe.com}}  \color{dgray} \small (Beijing, China)}
+        {\emph{\color{dgray} \small 07/2010 -- 06/2012}}
+
+    \headerrow
+        { \small System Administrator and Programmer \color{dgray} (Department of Network)}
+
+    \begin{itemize*} \small
+        \item[-]\leftskip-1em \rightskip2.8cm Maintained the Linux server and managed MediaWiki sub-site, deploying retrofits, extensions and automated tasks (bot)
+    \end{itemize*}
+
+\end{itemize}
+
+%\hrule
+\vspace{-1.4em}
+\subsection*{\color{NavyBlue} SKILLS \& INTERESTS}
+
+\begin{indentsection}{\parindent}
+
+\small
+\begin{tabularx} 
+{\textwidth}{l l l}
+ \textbf{Languages:} & & \textbf{Web/Frameworks:} Django, CodeIgniter, WordPress, Node.js  \\
+ \hspace{1em}{\color{dgray} Proficient:} Python, C, shell scripting, JavaScript & & \textbf{Databases:} MySQL, Oracle, MongoDB\\
+ \hspace{1em}{\color{dgray} Intermediate:} Java, C\verb$++$, PHP, Ruby, Perl  & \hspace{1em} &\textbf{Systems:}  Linux (RHEL/Ubuntu), OS X\\
+ \hspace{1em}{\color{dgray} Basic:} Lisp, ML, Scala & &\textbf{Software:} Git, \LaTeX, Vim, Sphinx\\
+\end{tabularx}
+\end{indentsection}
+\end{document}
