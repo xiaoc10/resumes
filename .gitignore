@@ -3,5 +3,4 @@
 *.log
 *.out
 *.synctex.gz
-proposed
-shichao_an_proposed.pdf
+*.swp
