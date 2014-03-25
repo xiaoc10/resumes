@@ -52,6 +52,13 @@
     #2 \\
 \end{tabular*}}
 
+\newcommand{\slist}[1]
+{
+\vspace{-1.6em}
+\subsection*{\color{NavyBlue} #1}
+\vspace{-0.2em}
+}
+\newcommand{\sbullet}[1] { \item[-] \leftskip-1em \rightskip2.8cm #1}
 % make "C++" look pretty when used in text by touching up the plus signs
 %\newcommand{\CPP}
 %{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\small\bf ++}}
@@ -64,21 +71,19 @@
 
 \begin{center}
 {\huge \textbf{Shichao An}}
-\small \\\vspace{0.4em} \color{dgray}
-30 Newport Parkway\ \ \textbullet
-\ \ Apt 3214\ \ \textbullet
-\ \ Jersey City, NJ 07310
 \\
+\small \vspace{0.4em} \color{dgray}
+%30 Newport Parkway\ \ \textbullet
+%\ \ Apt 3214\ \ \textbullet
+%\ \ Jersey City, NJ 07310
 (631) 464-2914\ \ \textbullet
 \ \ \href{mailto:shichao.an@nyu.edu}{shichao.an@nyu.edu}\\
 \ \ \href{http://www.shichao-an.info/}{\color{NavyBlue} www.shichao-an.info} \textbullet
 \ \ \href{https://github.com/shichao-an}{\color{NavyBlue} github.com/shichao-an}
 \end{center}
-
 %\hrule
 
-\vspace{-1.0em}
-\subsection*{\color{NavyBlue} EDUCATION}
+\slist{EDUCATION}
 
 \begin{itemize}
     \parskip=0.1em
@@ -92,8 +97,8 @@
          \small M.S. Candidate in Computer Science}
          
     \begin{itemize*} \small
-         \item[-]\leftskip-1em \rightskip2.8cm \small \textbf{Relevant Courses}: Programming Languages, Fundamental Algorithms, Operating Systems, Database Systems, Cloud Computing, Open Source Tools, Multicore Processors
-         \item[-]\leftskip-1em \rightskip2.8cm \small \textbf{Current GPA}: 3.8/4.0
+         \sbullet \small \textbf{Relevant Courses}: Programming Languages, Fundamental Algorithms, Operating Systems, Database Systems, Cloud Computing, Open Source Tools, Multicore Processors
+         \sbullet \small \textbf{Current GPA}: 3.8/4.0
          
     \end{itemize*}
          
@@ -106,15 +111,13 @@
          \small B.S. in Computer Science}
 
     \begin{itemize*} \small
-         \item[-]\leftskip-1em \rightskip2.8cm \small \textbf{Major GPA}: 3.6/4.0
+         \sbullet \small \textbf{Major GPA}: 3.6/4.0
          
     \end{itemize*}
 
 \end{itemize}
 
-%\hrule
-\vspace{-1.4em}
-\subsection*{\color{NavyBlue} PROJECTS}
+\slist{PROJECTS}
 
 \begin{itemize}
     \parskip=0.1em
@@ -125,8 +128,9 @@
         {\emph{\color{dgray} \small 11/2013 -- present}}
         
     \begin{itemize*} \small
-        \item[-]\leftskip-1em \rightskip2.8cm Built a geo-social platform that facilitates event-based real-time location sharing
-        \item[-]\leftskip-1em \rightskip2.8cm Utilized APIs of Google Maps and Google Geocoding and implemented the website with Django, MongoDB and Bootstrap
+		\sbullet Designed architecture and implemented the Web applications with Django and MongoDB
+		\sbullet Facilitated on-map real-time location sharing with Google Maps and client-side JavaScript
+        \sbullet Conducted software configuration management and maintained documentation wiki 
         
     \end{itemize*}
     
@@ -136,7 +140,8 @@
         {\emph{\color{dgray} \small 12/2013 -- 01/2014}}   
         
     \begin{itemize*} \small
-        \item[-]\leftskip-1em \rightskip2.8cm Implemented a command-line tool to obtain sound power in real time, which turns the audio recording functionality into a sound level meter for machines that ship with audio input devices
+        \sbullet Implemented a command-line tool to obtain real-time sound power with audio input devices
+		\sbullet Leveraged PortAudio libraries to enable portability on Linux and OS X
     \end{itemize*}
 
 
@@ -146,15 +151,16 @@
         {\emph{\color{dgray} \small 10/2013 -- 12/2013}}
 
     \begin{itemize*} \small 
-        \item[-]\leftskip-1em \rightskip2.8cm Compared and analyzed parallelism in CPU-bound, I/O-bound and memory-bound applications implemented with \verb#threading#, \verb#multiprocessing# of the standard library, and OpenMP/Cython
+		\sbullet Experimented writing applications with \emph{threading}, \emph{multiprocessing} modules of the standard library and OpenMP in Cython
+		\sbullet Analyzed different types of parallelism and compared the approaches in terms of performance and development efficiency 
     \end{itemize*}
 
 
 \end{itemize}
 
-%\hrule
-\vspace{-1.4em}
-\subsection*{\color{NavyBlue} EXPERIENCE}
+
+
+\slist{EXPERIENCE}
 
 \begin{itemize}
     \parskip=0.1em
@@ -168,54 +174,48 @@
         { \small Software Development Intern }
 
     \begin{itemize*} \small
-        \item[-]\leftskip-1em \rightskip2.8cm Developed site backends, reusable applications and front-end features, including authentication, content management, activity stream, news processing, security and SEO
-        \item[-]\leftskip-1em \rightskip2.8cm Used Django, MySQL, MongoDB, Redis, Celery and Node.js for the backend implementation of major site functionalities and real-time data aggregation
+        \sbullet Developed site backends, reusable applications and front-end features, including authentication, content management, activity stream, security and search engine optimization 
+        \sbullet Used Django, MySQL, MongoDB, Redis and Celery for the backend implementation of major site functionalities and real-time data aggregation
             \end{itemize*}
 
     \item
     \headerrow
         {\textbf{\href{http://www.ibeike.com/}{\color{NavyBlue}iBeiKe.com}}  \color{dgray} \small (Beijing, China)}
-        {\emph{\color{dgray} \small 07/2010 -- 06/2012}}
+        {\emph{\color{dgray} \small 07/2011 -- 06/2012}}
 
     \headerrow
         { \small System Administrator \color{dgray} (Department of Network)}
 
     \begin{itemize*} \small
-        \item[-]\leftskip-1em \rightskip2.8cm Deployed upgrades, extensions and maintenance scripts for Web applications
-        \item[-]\leftskip-1em \rightskip2.8cm Automated the formatting and uploads of mass text and captured news from official sources to the MediaWiki-based subsite, iBeiKe Wiki, through API with Python and Pywikibot
+        \sbullet Deployed upgrades, extensions and maintenance scripts for Web applications
+        \sbullet Automated the formatting and uploads of mass text and captured news from official sources to the MediaWiki-based subsite, iBeiKe Wiki, through API with Python and Pywikibot
     \end{itemize*}
 
 \end{itemize}
 
-%\hrule
-\vspace{-1.4em}
-\subsection*{\color{NavyBlue} SKILLS}
+
+\slist{SKILLS}
 
 \begin{indentsection}{\parindent}
 
 \small
 \begin{tabularx} 
 {\textwidth}{l l l}
- \textbf{Programming Languages:} & & \textbf{Web Development:} HTML5, Django, Node.js, jQuery \\
+ \textbf{Programming Languages:} & & \textbf{Web Development:} HTML5, Django, jQuery \\
  \hspace{1em}{\color{dgray} Proficient:} Python, C, shell scripting & & \textbf{Databases:} MySQL, Oracle, MongoDB\\
  \hspace{1em}{\color{dgray} Intermediate:} JavaScript, Java, PHP, Perl  & \hspace{1em} &\textbf{Operating Systems:}  Linux (Fedora/RHEL/Ubuntu), OS X
 \end{tabularx}
 \textbf{Software and Tools:} Git, \LaTeX, Vim, KVM, Puppet, Selenium, Amazon Web Services, WordPress\\
 \end{indentsection}
 
-\vspace{-2.4em}
-\subsection*{\color{NavyBlue} CERTIFICATIONS}
+\slist{CERTIFICATIONS}
 
 \begin{itemize}
     \parskip=0.1em
 
     \item
     \headerrow
-        {\textbf{Red Hat Certified System Administrator} ({\href{https://www.redhat.com/wapps/training/certification/verify.html?certNumber=140-025-057&isSearch=False&verify=Verify}{\color{NavyBlue}140-025-057}})}
-
-    \item
-    \headerrow
-        {\textbf{Red Hat Certified Engineer} ({\href{https://www.redhat.com/wapps/training/certification/verify.html?certNumber=140-025-057&isSearch=False&verify=Verify}{\color{NavyBlue}140-025-057}})}
+	{\textbf{\href{https://www.redhat.com/wapps/training/certification/verify.html?certNumber=140-025-057\&isSearch=False\&verify=Verify}{\color{NavyBlue}Red Hat Certified Engineer}} (RHCE)}
 
 \end{itemize}
 \end{document}
