@@ -20,6 +20,7 @@
 
 \usepackage[usenames,dvipsnames]{xcolor}
 \usepackage{hyperref}
+\usepackage{hyphenat}
 
 % For multi-line commen
 \usepackage{verbatim}
@@ -59,13 +60,18 @@
 \vspace{-0.2em}
 }
 \newcommand{\sbullet}[1] { \item[-] \leftskip-1em \rightskip2.8cm #1}
+\newcommand{\ssbullet}[1]
+{
+	\item
+	\headerrow{#1}
+}
 % make "C++" look pretty when used in text by touching up the plus signs
 %\newcommand{\CPP}
 %{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\small\bf ++}}
 
 % and the actual content starts here
 \begin{document}
-
+\hyphenation{library}
 % Control font weight
 % \fontseries{l}
 
@@ -124,11 +130,11 @@
     
     \item
     \headerrow
-        {\textbf{\href{https://github.com/shichao-an/GeoPort}{\color{NavyBlue}GeoPort}} (\href{http://geoport.co/}{\color{NavyBlue} geoport.co})}
+        {\textbf{\href{http://geoport.co/}{\color{NavyBlue}GeoPort}}}
         {\emph{\color{dgray} \small 11/2013 -- present}}
         
     \begin{itemize*} \small
-		\sbullet Designed architecture and implemented the Web applications with Django and MongoDB
+		\sbullet Designed architecture and implemented applications with Django and MongoDB
 		\sbullet Facilitated on-map real-time location sharing with Google Maps and client-side JavaScript
         \sbullet Conducted software configuration management and maintained documentation wiki 
         
@@ -141,7 +147,7 @@
         
     \begin{itemize*} \small
         \sbullet Implemented a command-line tool to obtain real-time sound power with audio input devices
-		\sbullet Leveraged PortAudio libraries to enable portability on Linux and OS X
+		\sbullet Leveraged PortAudio and PyAudio libraries to enable portability on Linux and OS X
     \end{itemize*}
 
 
@@ -151,7 +157,7 @@
         {\emph{\color{dgray} \small 10/2013 -- 12/2013}}
 
     \begin{itemize*} \small 
-		\sbullet Experimented writing applications with \emph{threading}, \emph{multiprocessing} modules of the standard library and OpenMP in Cython
+		\sbullet Experimented writing and profiling programs with \emph{threading}, \emph{multiprocessing} modules of the standard library and OpenMP in Cython
 		\sbullet Analyzed different types of parallelism and compared the approaches in terms of performance and development efficiency 
     \end{itemize*}
 
@@ -175,7 +181,7 @@
 
     \begin{itemize*} \small
         \sbullet Developed site backends, reusable applications and front-end features, including authentication, content management, activity stream, security and search engine optimization 
-        \sbullet Used Django, MySQL, MongoDB, Redis and Celery for the backend implementation of major site functionalities and real-time data aggregation
+        \sbullet Used Django, MySQL, MongoDB, Redis and Celery to implement site functionalities and real-time data aggregation
             \end{itemize*}
 
     \item
@@ -201,21 +207,20 @@
 \small
 \begin{tabularx} 
 {\textwidth}{l l l}
- \textbf{Programming Languages:} & & \textbf{Web Development:} HTML5, Django, jQuery \\
- \hspace{1em}{\color{dgray} Proficient:} Python, C, shell scripting & & \textbf{Databases:} MySQL, Oracle, MongoDB\\
- \hspace{1em}{\color{dgray} Intermediate:} JavaScript, Java, PHP, Perl  & \hspace{1em} &\textbf{Operating Systems:}  Linux (Fedora/RHEL/Ubuntu), OS X
+\textbf{Programming Languages:} & & \textbf{Web Development:} HTML5, Django, jQuery \\[0.3ex]
+\hspace{1em}{\color{dgray} Proficient:} Python, C, shell scripting & & \textbf{Databases:} MySQL, Oracle, MongoDB\\[0.3ex]
+\hspace{1em}{\color{dgray} Intermediate:} JavaScript, Java, PHP, Perl  & \hspace{1em} &\textbf{Operating Systems:}  Linux (Fedora/RHEL/Ubuntu), OS X\\[0.3ex]
 \end{tabularx}
-\textbf{Software and Tools:} Git, \LaTeX, Vim, KVM, Puppet, Selenium, Amazon Web Services, WordPress\\
+\textbf{Software and Tools:} Git, \LaTeX, Vim, KVM, Puppet, Selenium, Amazon Web Services, WordPress
 \end{indentsection}
 
 \slist{CERTIFICATIONS}
 
 \begin{itemize}
-    \parskip=0.1em
+	\parskip=0.1em
+	\ssbullet{\textbf{\href{https://www.redhat.com/wapps/training/certification/verify.html?certNumber=140-025-057\&isSearch=False\&verify=Verify}{\color{NavyBlue}Red Hat Certified Engineer}} (RHCE)}
 
-    \item
-    \headerrow
-	{\textbf{\href{https://www.redhat.com/wapps/training/certification/verify.html?certNumber=140-025-057\&isSearch=False\&verify=Verify}{\color{NavyBlue}Red Hat Certified Engineer}} (RHCE)}
+	\ssbullet{\textbf{\href{https://www.redhat.com/wapps/training/certification/verify.html?certNumber=140-025-057\&isSearch=False\&verify=Verify}{\color{NavyBlue}Red Hat Certified System Administrator}} (RHCSA)}
 
 \end{itemize}
 \end{document}
