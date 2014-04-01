@@ -48,7 +48,7 @@
 
 % format two pieces of text, one left aligned and one right aligned
 \newcommand{\headerrow}[2]
-{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r@{\hspace{0.6em}}}
     #1 &
     #2 \\
 \end{tabular*}}
@@ -217,12 +217,12 @@
 \begin{indentsection}{\parindent}
 
 \begin{tabularx} 
-{\textwidth}{l l l}
-\textbf{Programming Languages:} & & \textbf{Web Development:} HTML5, Django, jQuery, Bootstrap \\[0.3ex]
-\hspace{1em}{\color{dgray} Proficient:} Python, C, Bash scripting & & \textbf{Databases:} MySQL, MongoDB, Oracle\\[0.3ex]
-\hspace{1em}{\color{dgray} Intermediate:} JavaScript, Java, PHP, Perl  & \hspace{1em} &\textbf{Operating Systems:}  Linux (Fedora/RHEL/Ubuntu), OS X\\[0.3ex]
+	{\textwidth}{l @{\hspace{2em}}l l}
+	\textbf{\color{dgray}Programming Languages:} & & \textbf{\color{dgray}Web Development:} HTML5, Django, jQuery, Bootstrap \\[0.3ex]
+	\hspace{1em}{\color{dgray} Advanced:} Python, C, Bash scripting & & \textbf{\color{dgray}Databases:} MySQL, MongoDB, Oracle\\[0.3ex]
+	\hspace{1em}{\color{dgray} Intermediate:} JavaScript, Java, PHP, Perl  & \hspace{1em} &\textbf{\color{dgray}Operating Systems:}  Linux (Fedora/RHEL/Ubuntu), OS X\\[0.3ex]
 \end{tabularx}
-\textbf{Software and Technologies:} Vim, Git, KVM, Puppet, Selenium, Amazon Web Services
+\textbf{\color{dgray}Software and Technologies:} Vim, Git, KVM, Puppet, Selenium, Amazon Web Services
 \end{indentsection}
 
 \slist{CERTIFICATIONS}
@@ -234,4 +234,3 @@
 
 \end{itemize}
 \end{document}
-\vspace{-0.2em}
