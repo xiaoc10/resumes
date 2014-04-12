@@ -1,5 +1,5 @@
 TEX = pdflatex
-CURRENT = shichao_an_current
+CURRENT = shichao_an
 SOURCEFILE = shichao_an.tex
 
 .PHONY: all clean
