@@ -1,0 +1,55 @@
+                                                       Shichao An
+                                               (631) 464-2914  shichao.an@nyu.edu
+                                             www.shichao-an.info  github.com/shichao-an
+
+EDUCATION
+   New York University                                                                               09/2012  05/2014 (exp.)
+    M.S. Candidate in Computer Science, GPA: 3.8/4.0
+     - Relevant Courses: Programming Languages, Fundamental Algorithms, Operating Systems, Database
+       Systems, Cloud Computing, Open Source Tools, Multicore Processors
+   University of Science and Technology Beijing (Beijing, China)                                          09/2008  06/2012
+    B.S. in Computer Science, GPA: 3.6/4.0
+
+PROJECTS
+   Adium Shell, Shell Utilities and Python Wrapper for Adium IM                                           03/2014  present
+     - Implemented shell utilities, wrapper interface and AppleScript scripts that access Adium features
+     - Extended the interface with event handling by parsing chat logs, using Watchdog library that lever-
+       ages Kqueue and FSEvents on OS X
+     - Enabled automatic conversation feature that supports pattern-based and user-extended chat meth-
+       ods, and external chatterbot APIs such as SimSimi
+   GeoPort, Geo-Social Platform                                                                           11/2013  present
+     - Designed architecture and implemented applications with Django, MongoDB and MongoEngine
+     - Facilitated on-map real-time location sharing with Google Maps and client-side JavaScript
+     - Conducted software con guration management and maintained documentation wiki for the team
+   SoundMeter, Simple Command-Line Sound Level Meter                                                      12/2013  01/2014
+     - Built a command-line tool able to obtain sound level in real time with audio input devices based on
+       PortAudio and PyAudio libraries
+     - Implemented the meter that supports event triggering and the extensible monitor API
+   Python and Parallel Programming, Multicore Processors Course Project                                  10/2013  12/2013
+     - Experimented writing and pro ling parallelized programs with threading, multiprocessing modules of
+       the standard library and OpenMP in Cython
+     - Analyzed different types of parallelism and compared the approaches in terms of performance and
+       development e ciency
+EXPERIENCE
+   SIGNL (New York, NY)                                                                                   06/2013  08/2013
+    Software Development Intern
+     - Developed site features and reusable applications related to authentication, content management,
+       request security, and feed system using Django
+     - Used Redis cache to implement the activity stream system that records company page views and
+       follows, pushing noti cations to users
+     - Implemented news processing component able to highlight keyword sentences for the feed page
+     - Wrote an adaptive web crawler that scraps social accounts and mobile app identi ers
+   iBeiKe.com (Beijing, China)                                                                            07/2011  06/2012
+    System Administrator
+     - Deployed upgrades, extensions and maintenance scripts for content management systems (PHP)
+       hosted on the Linux server
+     - Automated the formatting and uploads of mass text and captured news from o cial sources to the
+       MediaWiki-based subsite, iBeiKe Wiki, through API with Python and Pywikibot
+SKILLS
+  Programming Languages:                       Web Development: HTML5, Django, jQuery, Bootstrap
+    Advanced: Python, C, Bash scripting        Databases: MySQL, MongoDB, Oracle
+    Intermediate: JavaScript, Java, PHP, Perl  Operating Systems: Linux (Fedora/RHEL/Ubuntu), OS X
+  Software and Technologies: Vim, Git, KVM, Puppet, Selenium, Amazon Web Services
+CERTIFICATIONS
+   Red Hat Certi ed Engineer (RHCE)
+   Red Hat Certi ed System Administrator (RHCSA)
