@@ -30,6 +30,7 @@ PROJECTS
        the standard library and OpenMP in Cython
      - Analyzed different types of parallelism and compared the approaches in terms of performance and
        development e ciency
+
 EXPERIENCE
    SIGNL (New York, NY)                                                                                   06/2013  08/2013
     Software Development Intern
@@ -43,13 +44,15 @@ EXPERIENCE
     System Administrator
      - Deployed upgrades, extensions and maintenance scripts for content management systems (PHP)
        hosted on the Linux server
-     - Automated the formatting and uploads of mass text and captured news from o cial sources to the
+     - Automated the formatting and uploads of mass text and captured news from official sources to the
        MediaWiki-based subsite, iBeiKe Wiki, through API with Python and Pywikibot
+
 SKILLS
   Programming Languages:                       Web Development: HTML5, Django, jQuery, Bootstrap
     Advanced: Python, C, Bash scripting        Databases: MySQL, MongoDB, Oracle
     Intermediate: JavaScript, Java, PHP, Perl  Operating Systems: Linux (Fedora/RHEL/Ubuntu), OS X
   Software and Technologies: Vim, Git, KVM, Puppet, Selenium, Amazon Web Services
+
 CERTIFICATIONS
-   Red Hat Certi ed Engineer (RHCE)
-   Red Hat Certi ed System Administrator (RHCSA)
+   Red Hat Certified Engineer (RHCE)
+   Red Hat Certified System Administrator (RHCSA)
